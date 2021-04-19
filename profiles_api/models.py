@@ -13,7 +13,6 @@ class UserProfileManager(BaseUserManager):
         """
         if not email:
             raise ValueError('User must have an email address')
-        #  TODO: preguntar por el tipo de docstring que se usa.
         email = self.normalize_email(email)
         user: UserProfile = self.model(email=email, name=name)
         user.set_password(password)
