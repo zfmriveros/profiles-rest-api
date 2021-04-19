@@ -1,0 +1,5 @@
+# activar ambiente python
+source ~/env/bin/activate
+cd vagrant
+python manage.py runserver 0.0.0.0:8000
+
