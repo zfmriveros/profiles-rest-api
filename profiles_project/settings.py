@@ -25,7 +25,10 @@ SECRET_KEY = '$x*nsw7jv^4jnz3mk@+514bj=+)@&qrvdmf+0sfjyvnbu9wj9_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG',1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-18-116-33-239.us-east-2.compute.amazonaws.com',
+    '127.0.0.1'
+]
 
 STATIC_ROOT = 'static/'
 
