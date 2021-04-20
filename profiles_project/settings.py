@@ -23,9 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$x*nsw7jv^4jnz3mk@+514bj=+)@&qrvdmf+0sfjyvnbu9wj9_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(int(os.environ.get('DEBUG',1)))
 
 ALLOWED_HOSTS = []
+
+STATIC_ROOT = 'static/'
 
 
 # Application definition
